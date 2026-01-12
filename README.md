@@ -107,5 +107,4 @@ The system implements a sequential chain of thought:
 4. **Optimization**: It specifically looks for opportunities to shorten answers (<50 words) and appends technical Schema markup.
 5. **Persistence**: When using the DB/Flask paths, the generated content is stored in your Neon-hosted Postgres `blogs` table.
 
-## 📄 License
-[MIT](LICENSE)
+

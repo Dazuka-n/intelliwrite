@@ -1,0 +1,11 @@
+agno
+qdrant-client
+openai
+pydantic
+python-dotenv
+sqlalchemy
+pg8000
+Flask
+flask-cors
+duckduckgo-search
+langfuse

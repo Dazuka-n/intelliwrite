@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.py",
+      "use": "@vercel/python",
+      "config": {
+        "includeFiles": [
+          "aeo_blog_engine/**",
+          "requirements.txt",
+          ".env"
+        ],
+        "excludeFiles": [
+          "aeo_blog_engine/tests/**",
+          "aeo_blog_engine/knowledge/docs/**",
+          "test_*.py",
+          "inspect_*.py",
+          "normalize.py",
+          "**/__pycache__/**",
+          "temp_build_check/**"
+        ]
+      }
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/index.py"
+    }
+  ],
+  "env": {
+      "PYTHONPATH": "."
+  }
+}
